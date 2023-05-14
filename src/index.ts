@@ -1,7 +1,6 @@
 import { Query } from './resolvers/Query';
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
-import { puppies } from './database';
 import { typeDefs } from './schema';
 
 const server = new ApolloServer({
