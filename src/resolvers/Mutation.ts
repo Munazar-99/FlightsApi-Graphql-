@@ -7,7 +7,6 @@ export const Mutation = {
           index: 'puppies',
           document: args.inputBody
         })
-        await client.indices.refresh({ index: 'puppies' })
         return puppies
     }
   }
