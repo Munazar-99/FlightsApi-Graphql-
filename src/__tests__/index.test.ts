@@ -37,7 +37,7 @@ it('returns single puppy through Id', async () => {
 
     const response = await testServer.executeOperation({
         query: `query  {
-            getpuppy(inputId:10) {
+            getPuppy(inputId:10) {
               breed
               name
               img
@@ -49,5 +49,5 @@ it('returns single puppy through Id', async () => {
     console.log('munazar', response.body)
     assert(response.body.kind === 'single');
     expect(response.body.singleResult.errors).toBeUndefined();
-    expect(response.body.singleResult.data?.getpuppy).toHaveProperty('name', 'Alfonsa');
+    expect(response.body.singleResult.data?.getPuppy).toHaveProperty('name', 'Alfonsa');
 });

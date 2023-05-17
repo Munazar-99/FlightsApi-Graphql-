@@ -11,7 +11,7 @@ export const Query = {
         });
         return response?.hits.hits.map(puppy=> puppy._source)
     },
-    getpuppy: async(parent, args, context) => {
+    getPuppy: async(parent, args, context) => {
         const {_source} = await client.get({
             index:'puppies',
             id: args.inputId

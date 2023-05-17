@@ -15,7 +15,7 @@
   }
   type Query {
     puppies: [Puppy]
-    getpuppy(inputId: Int): Puppy
+    getPuppy(inputId: Int): Puppy
   }
   type Mutation {
     addPuppy(inputBody: PuppyInput!): [Puppy]
