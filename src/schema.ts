@@ -19,5 +19,6 @@
   }
   type Mutation {
     addPuppy(inputBody: PuppyInput!): [Puppy]
+    updatePuppy(inputBody: PuppyInput!): [Puppy]
   }
 `;
