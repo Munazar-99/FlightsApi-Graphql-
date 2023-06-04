@@ -46,7 +46,6 @@ it('returns single puppy through Id', async () => {
             }
           }`
     });
-    console.log('munazar', response.body)
     assert(response.body.kind === 'single');
     expect(response.body.singleResult.errors).toBeUndefined();
     expect(response.body.singleResult.data?.getPuppy).toHaveProperty('name', 'Alfonsa');
